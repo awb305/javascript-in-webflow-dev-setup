@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve-webflow-scripts": "webpack-dev-server --config webpack.dev.js",
-    "build-webflow-scripts": "webpack --config webpack.dev.js"
+    "build-webflow-scripts": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@types/webpack-env": "^1.16.2"
+    "@types/smartystreets-javascript-sdk": "^1.6.4",
+    "@types/webpack-env": "^1.16.2",
+    "smartystreets-javascript-sdk": "^1.11.0"
   }
 }

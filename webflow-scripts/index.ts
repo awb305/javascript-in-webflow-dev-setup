@@ -1,9 +1,9 @@
-import { helloWorld } from './helloWorld';
+import { inputHandler } from './inputHandler';
 
-helloWorld();
-if (module.hot) {
-  module.hot.accept('./helloWorld.ts', function () {
-    console.log('Accepting the updated hello module!');
-    helloWorld();
-  });
-}
+console.log('running ..');
+
+document.onreadystatechange = function () {
+  if (document.readyState === 'interactive') {
+    inputHandler();
+  }
+};
