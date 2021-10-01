@@ -45,7 +45,7 @@ export const inputHandler = () => {
         suggestionDiv.style.transitionDuration = '400ms';
 
         if (i < 3) {
-          resultDiv?.after(suggestionDiv);
+          resultDiv?.before(suggestionDiv);
         }
       });
 
